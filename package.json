@@ -1,0 +1,22 @@
+{
+  "name": "code_school_express_m1",
+  "version": "1.0.0",
+  "description": "First module from CodeSchool Node.js and Express course",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",    
+    "start": "node index.js"
+  },
+  "author": "Angela",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "nodemon": "^1.12.1"
+  }
+}
