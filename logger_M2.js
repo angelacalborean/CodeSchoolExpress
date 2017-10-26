@@ -7,10 +7,10 @@ module.exports = function(request, response, next){
 
     response.on('finish', function(){
         var duration = +new Date() - start;
-        var message = method + ' to ' + url + '\n took ' + duration + 'ms\n\n';
+        var message = method + ' to ' + url + ' took ' + duration + 'ms\n\n';
 
         stream.write(message);
-        console.log(message);
+        //console.log(message);
     });
     next();
 }
