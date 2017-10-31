@@ -28,8 +28,11 @@ router.route('/')
 
 
 router.route('/:name')
-    .all(function(request, response){
-        
+    .all(function(request, response, next){
+        var name = request.params.name;
+        var block = name[0].toUpperCase() + name.slice(1).toLowerCase();
+        request.blockName = block;
+        next();        
     })
     .delete(function(request, response){
         delete blocks[request.blockName];
